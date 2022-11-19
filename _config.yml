@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "갱동구리"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/site_images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : "South Korea"
   # email            : "rhkdgnsvk2@naver.com"
