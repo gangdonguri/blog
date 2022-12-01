@@ -136,35 +136,35 @@ footer:
 
 # Reading Files
 include:
-  - /blog/.htaccess
-  - /blog/_pages
+  - .htaccess
+  - _pages
 exclude:
-  - /blog/"*.sublime-project"
-  - /blog/"*.sublime-workspace"
-  - /blog/vendor
-  - /blog/.asset-cache
-  - /blog/.bundle
-  - /blog/.jekyll-assets-cache
-  - /blog/.sass-cache
-  - /blog/assets/js/plugins
-  - /blog/assets/js/_main.js
-  - /blog/assets/js/vendor
-  - /blog/Capfile
-  - /blog/CHANGELOG
-  - /blog/config
-  - /blog/Gemfile
-  - /blog/Gruntfile.js
-  - /blog/gulpfile.js
-  - /blog/LICENSE
-  - /blog/log
-  - /blog/node_modules
-  - /blog/package.json
-  - /blog/package-lock.json
-  - /blog/Rakefile
-  - /blog/README
-  - /blog/tmp
-  - /blog/docs # ignore Minimal Mistakes /docs
-  - /blog/test # ignore Minimal Mistakes /test
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
