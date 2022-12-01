@@ -22,7 +22,7 @@ subtitle                 : "보고 또보고" # site tagline that appears below 
 name                     : "갱동구리"
 description              : "신은 용기있는 자를 결코 버리지 않는다."
 url                      : "https://gangdonguri.github.io"
-baseurl                  : # "/blog" # "/blog"
+baseurl                  : "/blog" # "/blog"
 repository               : "gangdonguri/gangdonguri.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/site_images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/site_images/site-logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
