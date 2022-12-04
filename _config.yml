@@ -35,64 +35,64 @@ comments:
     shortname            : "GDGnote" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
+  # facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
-  siteKey                :
-  secret                 :
+    # appid                :
+    # num_posts            : # 5 (default)
+    # colorscheme          : # "light" (default), "dark"
+  # utterances:
+  #   theme                : # "github-light" (default), "github-dark"
+  #   issue_term           : # "pathname" (default)
+  # giscus:
+  #   repo_id              : # Shown during giscus setup at https://giscus.app
+  #   category_name        : # Full text name of the category
+  #   category_id          : # Shown during giscus setup at https://giscus.app
+  #   discussion_term      : # "pathname" (default), "url", "title", "og:title"
+  #   reactions_enabled    : # '1' for enabled (default), '0' for disabled
+  #   theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  # staticman:
+  #   branch               : # "master"
+  #   endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+# reCaptcha:
+#   siteKey                :
+#   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+#   hide                   : # true, false (default)
 search                   : "true" # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : "true" # true, false (default)
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+# algolia:
+#   application_id         : # YOUR_APPLICATION_ID
+#   index_name             : # YOUR_INDEX_NAME
+#   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+#   powered_by             : # true (default), false
+# google:
+#   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+#   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
-bing_site_verification   :
+google_site_verification : "NRkHBmKTes28L-PYZ5a4dFQMmFvVbi7DWgoKf-ERjOE"
+# bing_site_verification   :
 naver_site_verification  : "659eea1878bab86ef237143bc5870f5e4f6fd02b"
-yandex_site_verification :
-baidu_site_verification  :
+# yandex_site_verification :
+# baidu_site_verification  :
 
 # Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+# twitter:
+#   username               :
+# facebook:
+#   username               :
+#   app_id                 :
+#   publisher              :
+# og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+# social:
+#   type                   : # Person or Organization (defaults to Person)
+#   name                   : # If the user or organization name differs from the site's name
+#   links: # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "갱동구리"
   avatar           : "/assets/site_images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
+  bio              : "Be brave."
   location         : "South Korea"
   # email            : "rhkdgnsvk2@naver.com"
   links:
@@ -118,10 +118,10 @@ author:
       url: "https://gangdonguri.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/gangdonguri/"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
+      url: "https://github.com/gangdonguri"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/kkh7304/"
 
 # Site Footer
 footer:
