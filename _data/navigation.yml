@@ -1,9 +1,13 @@
 # main links
 main:
-  - title: "category"
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /portfolio
+  - title: "Categories"
     url: /categories/
-  - title: "tag"
-    url: /tags/
+  # - title: "tag"
+  #   url: /tags/
   - title: "Search"
     url: /search/
 

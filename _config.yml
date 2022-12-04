@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "dirt" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "갱동구리 블로그"
+title                    : "갱동구리 블로그 : 보고 또 보고🐽"
 title_separator          : "|"
-subtitle                 : "보고 또보고" # site tagline that appears below site title in masthead
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "갱동구리"
 description              : "신은 용기있는 자를 결코 버리지 않는다."
 url                      : "https://gangdonguri.github.io"
 baseurl                  : "/blog" # "/blog"
 repository               : "gangdonguri/gangdonguri.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/site_images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/site_images/site-logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : # "/assets/site_images/site-logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
@@ -58,9 +58,9 @@ comments:
 #   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-#   hide                   : # true, false (default)
+  hide                   : true, false (default)
 search                   : "true" # true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      : "true" # false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : "true" # true, false (default)
@@ -129,6 +129,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gangdonguri/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/kkh7304/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   # url:
@@ -273,5 +276,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_label : " Contents"
+      toc_icon: "cog"
+      author_profile: true
 
 date_format: "%Y-%m-%d"
