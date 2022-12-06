@@ -277,8 +277,8 @@ defaults:
       related: true
       show_date: true
       toc: true
-      toc_label : " Contents"
-      toc_icon: "cog"
+      toc_label : "목차"
+      # toc_icon: "cog"
       toc_sticky: true
       author_profile: true
       mathjax: true
