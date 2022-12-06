@@ -115,7 +115,7 @@ author:
       url: "mailto:rhkdgnsvk2@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://gangdonguri.github.io"
+      url: "https://gangdonguri.github.io/blog/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/gangdonguri"
@@ -279,6 +279,8 @@ defaults:
       toc: true
       toc_label : " Contents"
       toc_icon: "cog"
+      toc_sticky: true
       author_profile: true
+      mathjax: true
 
 date_format: "%Y-%m-%d"
