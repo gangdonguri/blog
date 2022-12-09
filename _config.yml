@@ -277,7 +277,8 @@ defaults:
       related: true
       show_date: true
       toc: true
-      toc_label : "목차"
+      toc_label: "목차"
+      toc_sticky: true
       # toc_icon: "cog"
       toc_sticky: true
       author_profile: true
