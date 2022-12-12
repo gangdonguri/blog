@@ -21,14 +21,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "EC2" %}
-                        <li><a href="/categories/EC2" class="">EC2 (with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/EC2" class="">EC2 (with C++) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "VPC" %}
-                        <li><a href="/categories/VPC" class="">VPC ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/VPC" class="">VPC ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -37,14 +37,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "python" %}
-                        <li><a href="/categories/python" class="">python ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/python" class="">python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "javascript" %}
-                        <li><a href="/categories/javascript" class="">javascript ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/javascript" class="">javascript ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
 
@@ -52,21 +52,21 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ansible" %}
-                        <li><a href="/categories/ansible" class="">ansible ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/ansible" class="">ansible ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "terraform" %}
-                        <li><a href="/categories/terraform" class="">terraform ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/terraform" class="">terraform ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "vagrant" %}
-                        <li><a href="/categories/vagrant" class="">vagrant ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/vagrant" class="">vagrant ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
         
@@ -74,7 +74,23 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "git" %}
-                        <li><a href="/categories/git" class="">git ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/git" class="">git ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        
+        <span class="nav__sub-title">container</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "docker" %}
+                        <li><a href="/blog/categories/docker" class="">git ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "k8s" %}
+                        <li><a href="/blog/categories/k8s" class="">git ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
