@@ -12,7 +12,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "bash" %}
-                        <li><a href="/categories/bash" class="">bash ({{category[1].size}})</a></li>
+                        <li><a href="/blog/categories/bash" class="">bash ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
