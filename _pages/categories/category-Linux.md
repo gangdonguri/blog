@@ -1,12 +1,12 @@
 ---
-title: "EC2"
+title: "Linux 기초"
 layout: archive
-permalink: categories/EC2
+permalink: categories/Linux
 author_profile: true
 sidebar_main: true
 ---
 
 ***
 
-{% assign posts = site.categories.EC2 %}
+{% assign posts = site.categories.Linux %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
