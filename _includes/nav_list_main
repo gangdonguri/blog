@@ -104,6 +104,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Nginx" %}
+                        <li><a href="/blog/categories/Nginx" class="">Nginx ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
       <li>	
             <br>      
