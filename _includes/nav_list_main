@@ -20,8 +20,8 @@
         <span class="nav__sub-title">AWS</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "AWS Certified Solutions Architect" %}
-                        <li><a href="/blog/categories/AWS Certified Solutions Architect" class="">AWS Certified Solutions Architect (with C++) ({{category[1].size}})</a></li>
+                    {% if category[0] == "SAA" %}
+                        <li><a href="/blog/categories/SAA" class="">SAA ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -40,6 +40,7 @@
                         <li><a href="/blog/categories/javascript" class="">javascript ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+            </ul>
 
         <span class="nav__sub-title">IaC</span>
             <ul>
@@ -68,6 +69,7 @@
                         <li><a href="/blog/categories/CloudFormation" class="">CloudFormation ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+            </ul>
         
         <span class="nav__sub-title">CI/CD</span>
             <ul>
