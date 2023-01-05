@@ -87,14 +87,14 @@
                 <ul>
                     {% for category in site.categories %}
                     {% if category[0] == "docker" %}
-                    <li><a href="/blog/categories/docker" class="">git ({{category[1].size}})</a></li>
+                    <li><a href="/blog/categories/docker" class="">docker ({{category[1].size}})</a></li>
                     {% endif %}
                     {% endfor %}
                 </ul>
                 <ul>
                     {% for category in site.categories %}
                     {% if category[0] == "k8s" %}
-                    <li><a href="/blog/categories/k8s" class="">git ({{category[1].size}})</a></li>
+                    <li><a href="/blog/categories/k8s" class="">k8s ({{category[1].size}})</a></li>
                     {% endif %}
                     {% endfor %}
                 </ul>
