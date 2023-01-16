@@ -89,6 +89,34 @@
                     {% endif %}
                     {% endfor %}
                 </ul>
+                <ul>
+                    {% for category in site.categories %}
+                    {% if category[0] == "codepipeline" %}
+                    <li><a href="/blog/categories/codepipeline" class="">codepipeline ({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                    {% if category[0] == "codepcommit" %}
+                    <li><a href="/blog/categories/codepcommit" class="">codepcommit ({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                    {% if category[0] == "codebuild" %}
+                    <li><a href="/blog/categories/codebuild" class="">codebuild ({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for category in site.categories %}
+                    {% if category[0] == "codedeploy" %}
+                    <li><a href="/blog/categories/codedeploy" class="">codedeploy ({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
 
                 <span class="nav__sub-title">container</span>
                 <ul>
