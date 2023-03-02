@@ -18,7 +18,14 @@
                 {% endif %}
                 {% endfor %}
             </ul>
-
+            <span class="nav__sub-title">Network</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "HTTP" %}
+                <li><a href="/blog/categories/HTTP" class="">HTTP ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
             <span class="nav__sub-title">AWS</span>
             <ul>
                 {% for category in site.categories %}
@@ -27,8 +34,7 @@
                 {% endif %}
                 {% endfor %}
             </ul>
-
-            <span class="nav__sub-title">coding</span>
+            <span class="nav__sub-title">Coding</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "python" %}
@@ -43,7 +49,6 @@
                 {% endif %}
                 {% endfor %}
             </ul>
-
             <span class="nav__sub-title">IaC</span>
             <ul>
                 {% for category in site.categories %}
@@ -65,113 +70,119 @@
                 <li><a href="/blog/categories/vagrant" class="">vagrant ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "CloudFormation" %}
-                    <li><a href="/blog/categories/CloudFormation" class="">CloudFormation ({{category[1].size}})</a>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "CloudFormation" %}
+                <li><a href="/blog/categories/CloudFormation" class="">CloudFormation ({{category[1].size}})</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "serverless" %}
+                <li><a href="/blog/categories/serverless" class="">serverless ({{category[1].size}})</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
 
-                <span class="nav__sub-title">CI/CD</span>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "git" %}
-                    <li><a href="/blog/categories/git" class="">git ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "github-action" %}
-                    <li><a href="/blog/categories/github-action" class="">github-action ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "codepipeline" %}
-                    <li><a href="/blog/categories/codepipeline" class="">codepipeline ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "codepcommit" %}
-                    <li><a href="/blog/categories/codepcommit" class="">codepcommit ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "codebuild" %}
-                    <li><a href="/blog/categories/codebuild" class="">codebuild ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "codedeploy" %}
-                    <li><a href="/blog/categories/codedeploy" class="">codedeploy ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-
-                <span class="nav__sub-title">container</span>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "docker" %}
-                    <li><a href="/blog/categories/docker" class="">docker ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "k8s" %}
-                    <li><a href="/blog/categories/k8s" class="">k8s ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-
-                <span class="nav__sub-title">DB</span>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "SQL" %}
-                    <li><a href="/blog/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-
-                <span class="nav__sub-title">etc</span>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "HTTP" %}
-                    <li><a href="/blog/categories/HTTP" class="">HTTP ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "Nginx" %}
-                    <li><a href="/blog/categories/Nginx" class="">Nginx ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "Project" %}
-                    <li><a href="/blog/categories/Project" class="">Project ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-                <ul>
-                    {% for category in site.categories %}
-                    {% if category[0] == "troubleshooting" %}
-                    <li><a href="/blog/categories/troubleshooting" class="">troubleshooting ({{category[1].size}})</a></li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
+            <span class="nav__sub-title">CI/CD</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "git" %}
+                <li><a href="/blog/categories/git" class="">git ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "github-action" %}
+                <li><a href="/blog/categories/github-action" class="">github-action ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "codepipeline" %}
+                <li><a href="/blog/categories/codepipeline" class="">codepipeline ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "codepcommit" %}
+                <li><a href="/blog/categories/codepcommit" class="">codepcommit ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "codebuild" %}
+                <li><a href="/blog/categories/codebuild" class="">codebuild ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "codedeploy" %}
+                <li><a href="/blog/categories/codedeploy" class="">codedeploy ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">Container</span>
+            <ul>
+            {% for category in site.categories %}
+            {% if category[0] == "docker" %}
+            <li><a href="/blog/categories/docker" class="">docker ({{category[1].size}})</a></li>
+            {% endif %}
+            {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "k8s" %}
+                <li><a href="/blog/categories/k8s" class="">k8s ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">DB</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "SQL" %}
+                <li><a href="/blog/categories/SQL" class="">SQL ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">Etc</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Nginx" %}
+                <li><a href="/blog/categories/Nginx" class="">Nginx ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Project" %}
+                <li><a href="/blog/categories/Project" class="">Project ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "troubleshooting" %}
+                <li><a href="/blog/categories/troubleshooting" class="">troubleshooting ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">Monitoring</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "cloudwatch" %}
+                <li><a href="/blog/categories/cloudwatch" class="">cloudwatch ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
         </li>
         <li>
             <br>
