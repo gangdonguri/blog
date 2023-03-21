@@ -97,8 +97,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "github-action" %}
-                <li><a href="/blog/categories/github-action" class="">github-action ({{category[1].size}})</a></li>
+                {% if category[0] == "github_action" %}
+                <li><a href="/blog/categories/github_action" class="">github_action ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
