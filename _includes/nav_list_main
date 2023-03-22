@@ -163,13 +163,6 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "Project" %}
-                <li><a href="/blog/categories/Project" class="">Project ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
                 {% if category[0] == "troubleshooting" %}
                 <li><a href="/blog/categories/troubleshooting" class="">troubleshooting ({{category[1].size}})</a></li>
                 {% endif %}
